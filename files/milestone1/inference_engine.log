@@ -1,0 +1,321 @@
+2026-03-20 07:32:17.820 [INFO ] (main.c:152) === Parallel Inference Engine — Milestone 1 ===
+2026-03-20 07:32:17.820 [INFO ] (main.c:153) Model: ./tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf | threads: 4 | max_tokens: 64
+2026-03-20 07:32:17.820 [INFO ] (engine.c:358) Loading model: ./tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
+2026-03-20 07:32:18.055 [INFO ] (engine.c:364) Model loaded successfully
+2026-03-20 07:32:18.077 [INFO ] (engine.c:377) Context created (n_ctx=2048, n_threads=4)
+2026-03-20 07:32:18.077 [INFO ] (queue.c:36) Queue created (max_size=256)
+2026-03-20 07:32:18.077 [INFO ] (engine.c:387) InferenceEngine ready
+2026-03-20 07:32:18.081 [INFO ] (engine.c:282) Worker thread started
+2026-03-20 07:32:18.083 [INFO ] (engine.c:417) Engine started
+2026-03-20 07:32:18.084 [DEBUG] (job.c:76) Job #1 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:18.084 [DEBUG] (queue.c:139) queue_push: job #1 enqueued (queue size=1)
+2026-03-20 07:32:18.084 [DEBUG] (queue.c:191) queue_pop: job #1 dequeued (queue size=0)
+2026-03-20 07:32:18.084 [DEBUG] (job.c:134) Job #1 → RUNNING  (queue_wait=0.5 ms)
+2026-03-20 07:32:18.084 [DEBUG] (engine.c:190) Job #1: 39 prompt tokens, generating up to 64
+2026-03-20 07:32:20.599 [DEBUG] (engine.c:233) Job #1: EOG at step 9
+2026-03-20 07:32:20.599 [DEBUG] (engine.c:269) Job #1: generated 9 tokens
+2026-03-20 07:32:20.599 [DEBUG] (job.c:147) Job #1 → DONE     (exec=2515.0 ms, output_len=34)
+2026-03-20 07:32:20.599 [DEBUG] (job.c:76) Job #2 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:20.599 [DEBUG] (queue.c:139) queue_push: job #2 enqueued (queue size=1)
+2026-03-20 07:32:20.599 [DEBUG] (queue.c:191) queue_pop: job #2 dequeued (queue size=0)
+2026-03-20 07:32:20.599 [DEBUG] (job.c:134) Job #2 → RUNNING  (queue_wait=0.1 ms)
+2026-03-20 07:32:20.600 [DEBUG] (engine.c:190) Job #2: 43 prompt tokens, generating up to 64
+2026-03-20 07:32:27.490 [DEBUG] (engine.c:269) Job #2: generated 64 tokens
+2026-03-20 07:32:27.490 [DEBUG] (job.c:147) Job #2 → DONE     (exec=6890.9 ms, output_len=263)
+2026-03-20 07:32:27.490 [DEBUG] (job.c:76) Job #3 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:27.491 [DEBUG] (queue.c:139) queue_push: job #3 enqueued (queue size=1)
+2026-03-20 07:32:27.491 [DEBUG] (queue.c:191) queue_pop: job #3 dequeued (queue size=0)
+2026-03-20 07:32:27.491 [DEBUG] (job.c:134) Job #3 → RUNNING  (queue_wait=0.4 ms)
+2026-03-20 07:32:27.491 [DEBUG] (engine.c:190) Job #3: 40 prompt tokens, generating up to 64
+2026-03-20 07:32:33.616 [DEBUG] (engine.c:233) Job #3: EOG at step 55
+2026-03-20 07:32:33.616 [DEBUG] (engine.c:269) Job #3: generated 55 tokens
+2026-03-20 07:32:33.617 [DEBUG] (job.c:76) Job #5 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:33.617 [DEBUG] (queue.c:139) queue_push: job #5 enqueued (queue size=1)
+2026-03-20 07:32:33.617 [DEBUG] (job.c:76) Job #4 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:33.617 [DEBUG] (queue.c:139) queue_push: job #4 enqueued (queue size=2)
+2026-03-20 07:32:33.617 [DEBUG] (job.c:76) Job #6 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:33.617 [DEBUG] (queue.c:139) queue_push: job #6 enqueued (queue size=3)
+2026-03-20 07:32:33.617 [DEBUG] (job.c:147) Job #22972287152 → DONE     (exec=6125.6 ms, output_len=231)
+2026-03-20 07:32:33.617 [DEBUG] (job.c:76) Job #7 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:33.617 [DEBUG] (queue.c:139) queue_push: job #7 enqueued (queue size=4)
+2026-03-20 07:32:33.617 [DEBUG] (queue.c:191) queue_pop: job #5 dequeued (queue size=3)
+2026-03-20 07:32:33.617 [DEBUG] (job.c:134) Job #5 → RUNNING  (queue_wait=0.5 ms)
+2026-03-20 07:32:33.617 [DEBUG] (engine.c:190) Job #5: 43 prompt tokens, generating up to 64
+2026-03-20 07:32:36.551 [DEBUG] (engine.c:233) Job #5: EOG at step 14
+2026-03-20 07:32:36.552 [DEBUG] (engine.c:269) Job #5: generated 14 tokens
+2026-03-20 07:32:36.552 [DEBUG] (job.c:147) Job #5 → DONE     (exec=2934.5 ms, output_len=18)
+2026-03-20 07:32:36.552 [DEBUG] (queue.c:191) queue_pop: job #4 dequeued (queue size=2)
+2026-03-20 07:32:36.552 [DEBUG] (job.c:134) Job #4 → RUNNING  (queue_wait=2935.4 ms)
+2026-03-20 07:32:36.552 [DEBUG] (job.c:76) Job #8 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:36.553 [DEBUG] (queue.c:139) queue_push: job #8 enqueued (queue size=3)
+2026-03-20 07:32:36.552 [DEBUG] (engine.c:190) Job #4: 40 prompt tokens, generating up to 64
+2026-03-20 07:32:38.910 [DEBUG] (engine.c:233) Job #4: EOG at step 7
+2026-03-20 07:32:38.910 [DEBUG] (engine.c:269) Job #4: generated 7 tokens
+2026-03-20 07:32:38.911 [DEBUG] (job.c:147) Job #4 → DONE     (exec=2358.3 ms, output_len=31)
+2026-03-20 07:32:38.911 [DEBUG] (queue.c:191) queue_pop: job #6 dequeued (queue size=2)
+2026-03-20 07:32:38.911 [DEBUG] (job.c:76) Job #9 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:38.911 [DEBUG] (queue.c:139) queue_push: job #9 enqueued (queue size=3)
+2026-03-20 07:32:38.911 [DEBUG] (job.c:134) Job #6 → RUNNING  (queue_wait=5293.9 ms)
+2026-03-20 07:32:38.911 [DEBUG] (engine.c:190) Job #6: 41 prompt tokens, generating up to 64
+2026-03-20 07:32:46.317 [DEBUG] (engine.c:269) Job #6: generated 64 tokens
+2026-03-20 07:32:46.317 [DEBUG] (job.c:147) Job #6 → DONE     (exec=7406.1 ms, output_len=307)
+2026-03-20 07:32:46.317 [DEBUG] (queue.c:191) queue_pop: job #7 dequeued (queue size=2)
+2026-03-20 07:32:46.317 [DEBUG] (job.c:134) Job #7 → RUNNING  (queue_wait=12700.1 ms)
+2026-03-20 07:32:46.317 [DEBUG] (job.c:76) Job #10 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:46.318 [DEBUG] (queue.c:139) queue_push: job #10 enqueued (queue size=3)
+2026-03-20 07:32:46.317 [DEBUG] (engine.c:190) Job #7: 39 prompt tokens, generating up to 64
+2026-03-20 07:32:55.305 [DEBUG] (engine.c:269) Job #7: generated 64 tokens
+2026-03-20 07:32:55.305 [DEBUG] (job.c:147) Job #7 → DONE     (exec=8988.2 ms, output_len=348)
+2026-03-20 07:32:55.306 [DEBUG] (queue.c:191) queue_pop: job #8 dequeued (queue size=2)
+2026-03-20 07:32:55.306 [DEBUG] (job.c:134) Job #8 → RUNNING  (queue_wait=18754.3 ms)
+2026-03-20 07:32:55.306 [DEBUG] (job.c:76) Job #11 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:32:55.306 [DEBUG] (queue.c:139) queue_push: job #11 enqueued (queue size=3)
+2026-03-20 07:32:55.307 [DEBUG] (engine.c:190) Job #8: 47 prompt tokens, generating up to 64
+2026-03-20 07:33:05.633 [DEBUG] (engine.c:269) Job #8: generated 64 tokens
+2026-03-20 07:33:05.634 [DEBUG] (job.c:147) Job #8 → DONE     (exec=10327.5 ms, output_len=236)
+2026-03-20 07:33:05.634 [DEBUG] (queue.c:191) queue_pop: job #9 dequeued (queue size=2)
+2026-03-20 07:33:05.634 [DEBUG] (job.c:134) Job #9 → RUNNING  (queue_wait=26723.5 ms)
+2026-03-20 07:33:05.634 [DEBUG] (engine.c:190) Job #9: 43 prompt tokens, generating up to 64
+2026-03-20 07:33:05.635 [DEBUG] (job.c:76) Job #12 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:33:05.635 [DEBUG] (queue.c:139) queue_push: job #12 enqueued (queue size=3)
+2026-03-20 07:33:11.158 [DEBUG] (engine.c:233) Job #9: EOG at step 35
+2026-03-20 07:33:11.158 [DEBUG] (engine.c:269) Job #9: generated 35 tokens
+2026-03-20 07:33:11.159 [DEBUG] (job.c:147) Job #9 → DONE     (exec=5524.5 ms, output_len=179)
+2026-03-20 07:33:11.160 [DEBUG] (queue.c:191) queue_pop: job #10 dequeued (queue size=2)
+2026-03-20 07:33:11.163 [DEBUG] (job.c:134) Job #10 → RUNNING  (queue_wait=24845.7 ms)
+2026-03-20 07:33:11.162 [DEBUG] (job.c:76) Job #13 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:33:11.163 [DEBUG] (queue.c:139) queue_push: job #13 enqueued (queue size=3)
+2026-03-20 07:33:11.164 [DEBUG] (engine.c:190) Job #10: 46 prompt tokens, generating up to 64
+2026-03-20 07:33:15.920 [DEBUG] (engine.c:233) Job #10: EOG at step 27
+2026-03-20 07:33:15.921 [DEBUG] (engine.c:269) Job #10: generated 27 tokens
+2026-03-20 07:33:15.921 [DEBUG] (job.c:147) Job #10 → DONE     (exec=4758.1 ms, output_len=72)
+2026-03-20 07:33:15.921 [DEBUG] (queue.c:191) queue_pop: job #11 dequeued (queue size=2)
+2026-03-20 07:33:15.921 [DEBUG] (job.c:134) Job #11 → RUNNING  (queue_wait=20615.9 ms)
+2026-03-20 07:33:15.921 [DEBUG] (job.c:76) Job #14 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:33:15.921 [DEBUG] (queue.c:139) queue_push: job #14 enqueued (queue size=3)
+2026-03-20 07:33:15.922 [DEBUG] (engine.c:190) Job #11: 40 prompt tokens, generating up to 64
+2026-03-20 07:33:23.575 [DEBUG] (engine.c:269) Job #11: generated 64 tokens
+2026-03-20 07:33:23.575 [DEBUG] (job.c:147) Job #11 → DONE     (exec=7653.8 ms, output_len=286)
+2026-03-20 07:33:23.575 [DEBUG] (queue.c:191) queue_pop: job #12 dequeued (queue size=2)
+2026-03-20 07:33:23.575 [DEBUG] (job.c:134) Job #12 → RUNNING  (queue_wait=17940.2 ms)
+2026-03-20 07:33:23.576 [DEBUG] (job.c:76) Job #15 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:33:23.576 [DEBUG] (queue.c:139) queue_push: job #15 enqueued (queue size=3)
+2026-03-20 07:33:23.576 [DEBUG] (engine.c:190) Job #12: 39 prompt tokens, generating up to 64
+2026-03-20 07:33:28.204 [DEBUG] (engine.c:233) Job #12: EOG at step 27
+2026-03-20 07:33:28.205 [DEBUG] (engine.c:269) Job #12: generated 27 tokens
+2026-03-20 07:33:28.205 [DEBUG] (job.c:147) Job #12 → DONE     (exec=4629.1 ms, output_len=132)
+2026-03-20 07:33:28.205 [DEBUG] (queue.c:191) queue_pop: job #13 dequeued (queue size=2)
+2026-03-20 07:33:28.205 [DEBUG] (job.c:134) Job #13 → RUNNING  (queue_wait=17043.0 ms)
+2026-03-20 07:33:28.206 [DEBUG] (engine.c:190) Job #13: 42 prompt tokens, generating up to 64
+2026-03-20 07:33:32.324 [DEBUG] (engine.c:233) Job #13: EOG at step 19
+2026-03-20 07:33:32.324 [DEBUG] (engine.c:269) Job #13: generated 19 tokens
+2026-03-20 07:33:32.324 [DEBUG] (job.c:147) Job #13 → DONE     (exec=4119.0 ms, output_len=75)
+2026-03-20 07:33:32.324 [DEBUG] (queue.c:191) queue_pop: job #14 dequeued (queue size=1)
+2026-03-20 07:33:32.324 [DEBUG] (job.c:134) Job #14 → RUNNING  (queue_wait=16403.0 ms)
+2026-03-20 07:33:32.324 [DEBUG] (engine.c:190) Job #14: 42 prompt tokens, generating up to 64
+2026-03-20 07:33:39.885 [DEBUG] (engine.c:233) Job #14: EOG at step 55
+2026-03-20 07:33:39.886 [DEBUG] (engine.c:269) Job #14: generated 55 tokens
+2026-03-20 07:33:39.886 [DEBUG] (job.c:147) Job #14 → DONE     (exec=7561.7 ms, output_len=230)
+2026-03-20 07:33:39.886 [DEBUG] (queue.c:191) queue_pop: job #15 dequeued (queue size=0)
+2026-03-20 07:33:39.886 [DEBUG] (job.c:134) Job #15 → RUNNING  (queue_wait=16310.8 ms)
+2026-03-20 07:33:39.887 [DEBUG] (engine.c:190) Job #15: 41 prompt tokens, generating up to 64
+2026-03-20 07:33:47.901 [DEBUG] (engine.c:269) Job #15: generated 64 tokens
+2026-03-20 07:33:47.902 [DEBUG] (job.c:147) Job #140431807480768 → DONE     (exec=8015.1 ms, output_len=330)
+2026-03-20 07:34:30.840 [DEBUG] (job.c:76) Job #16 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:34:30.840 [DEBUG] (queue.c:139) queue_push: job #16 enqueued (queue size=1)
+2026-03-20 07:34:30.840 [DEBUG] (queue.c:191) queue_pop: job #16 dequeued (queue size=0)
+2026-03-20 07:34:30.840 [DEBUG] (job.c:134) Job #16 → RUNNING  (queue_wait=0.3 ms)
+2026-03-20 07:34:30.840 [DEBUG] (engine.c:190) Job #16: 41 prompt tokens, generating up to 64
+2026-03-20 07:34:37.011 [DEBUG] (engine.c:233) Job #16: EOG at step 56
+2026-03-20 07:34:37.012 [DEBUG] (engine.c:269) Job #16: generated 56 tokens
+2026-03-20 07:34:37.012 [DEBUG] (job.c:147) Job #16 → DONE     (exec=6171.6 ms, output_len=170)
+2026-03-20 07:35:08.381 [DEBUG] (job.c:76) Job #17 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 07:35:08.381 [DEBUG] (queue.c:139) queue_push: job #17 enqueued (queue size=1)
+2026-03-20 07:35:08.381 [DEBUG] (queue.c:191) queue_pop: job #17 dequeued (queue size=0)
+2026-03-20 07:35:08.381 [DEBUG] (job.c:134) Job #17 → RUNNING  (queue_wait=0.4 ms)
+2026-03-20 07:35:08.382 [DEBUG] (engine.c:190) Job #17: 49 prompt tokens, generating up to 64
+2026-03-20 07:35:15.452 [DEBUG] (engine.c:269) Job #17: generated 64 tokens
+2026-03-20 07:35:15.453 [DEBUG] (job.c:147) Job #17 → DONE     (exec=7071.4 ms, output_len=229)
+2026-03-20 07:35:28.666 [INFO ] (engine.c:424) Engine stopping...
+2026-03-20 07:35:28.666 [INFO ] (queue.c:212) Queue shut down (0 jobs remaining)
+2026-03-20 07:35:28.666 [INFO ] (engine.c:287) Worker: queue drained, exiting
+2026-03-20 07:35:28.666 [INFO ] (engine.c:317) Worker thread exited
+2026-03-20 07:35:28.666 [INFO ] (engine.c:428) Engine stopped
+2026-03-20 07:35:28.691 [INFO ] (engine.c:443) Engine destroyed
+2026-03-20 09:02:40.228 [INFO ] (main.c:152) === Parallel Inference Engine — Milestone 1 ===
+2026-03-20 09:02:40.228 [INFO ] (main.c:153) Model: ./tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf | threads: 4 | max_tokens: 64
+2026-03-20 09:02:40.228 [INFO ] (engine.c:358) Loading model: ./tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
+2026-03-20 09:02:40.477 [INFO ] (engine.c:364) Model loaded successfully
+2026-03-20 09:02:40.493 [INFO ] (engine.c:377) Context created (n_ctx=2048, n_threads=4)
+2026-03-20 09:02:40.493 [INFO ] (queue.c:36) Queue created (max_size=256)
+2026-03-20 09:02:40.493 [INFO ] (engine.c:387) InferenceEngine ready
+2026-03-20 09:02:40.493 [INFO ] (engine.c:417) Engine started
+2026-03-20 09:02:40.493 [DEBUG] (job.c:76) Job #1 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:40.493 [DEBUG] (queue.c:139) queue_push: job #1 enqueued (queue size=1)
+2026-03-20 09:02:40.494 [INFO ] (engine.c:282) Worker thread started
+2026-03-20 09:02:40.494 [DEBUG] (queue.c:191) queue_pop: job #1 dequeued (queue size=0)
+2026-03-20 09:02:40.494 [DEBUG] (job.c:134) Job #1 → RUNNING  (queue_wait=0.4 ms)
+2026-03-20 09:02:40.494 [DEBUG] (engine.c:190) Job #1: 39 prompt tokens, generating up to 64
+2026-03-20 09:02:42.586 [DEBUG] (engine.c:233) Job #1: EOG at step 9
+2026-03-20 09:02:42.586 [DEBUG] (engine.c:269) Job #1: generated 9 tokens
+2026-03-20 09:02:42.586 [DEBUG] (job.c:147) Job #1 → DONE     (exec=2092.5 ms, output_len=34)
+2026-03-20 09:02:42.587 [DEBUG] (job.c:76) Job #2 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:42.587 [DEBUG] (queue.c:139) queue_push: job #2 enqueued (queue size=1)
+2026-03-20 09:02:42.587 [DEBUG] (queue.c:191) queue_pop: job #2 dequeued (queue size=0)
+2026-03-20 09:02:42.587 [DEBUG] (job.c:134) Job #2 → RUNNING  (queue_wait=0.4 ms)
+2026-03-20 09:02:42.587 [DEBUG] (engine.c:190) Job #2: 43 prompt tokens, generating up to 64
+2026-03-20 09:02:48.594 [DEBUG] (engine.c:269) Job #2: generated 64 tokens
+2026-03-20 09:02:48.594 [DEBUG] (job.c:147) Job #2 → DONE     (exec=6006.7 ms, output_len=263)
+2026-03-20 09:02:48.595 [DEBUG] (job.c:76) Job #3 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:48.595 [DEBUG] (queue.c:139) queue_push: job #3 enqueued (queue size=1)
+2026-03-20 09:02:48.595 [DEBUG] (queue.c:191) queue_pop: job #3 dequeued (queue size=0)
+2026-03-20 09:02:48.595 [DEBUG] (job.c:134) Job #3 → RUNNING  (queue_wait=0.6 ms)
+2026-03-20 09:02:48.596 [DEBUG] (engine.c:190) Job #3: 40 prompt tokens, generating up to 64
+2026-03-20 09:02:55.444 [DEBUG] (engine.c:233) Job #3: EOG at step 55
+2026-03-20 09:02:55.445 [DEBUG] (engine.c:269) Job #3: generated 55 tokens
+2026-03-20 09:02:55.445 [DEBUG] (job.c:147) Job #3 → DONE     (exec=6849.4 ms, output_len=231)
+2026-03-20 09:02:55.445 [DEBUG] (job.c:76) Job #5 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:55.445 [DEBUG] (queue.c:139) queue_push: job #5 enqueued (queue size=1)
+2026-03-20 09:02:55.445 [DEBUG] (queue.c:191) queue_pop: job #5 dequeued (queue size=0)
+2026-03-20 09:02:55.445 [DEBUG] (job.c:134) Job #5 → RUNNING  (queue_wait=0.1 ms)
+2026-03-20 09:02:55.445 [DEBUG] (job.c:76) Job #4 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:55.445 [DEBUG] (queue.c:139) queue_push: job #4 enqueued (queue size=1)
+2026-03-20 09:02:55.445 [DEBUG] (engine.c:190) Job #5: 40 prompt tokens, generating up to 64
+2026-03-20 09:02:55.446 [DEBUG] (job.c:76) Job #6 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:55.446 [DEBUG] (queue.c:139) queue_push: job #6 enqueued (queue size=2)
+2026-03-20 09:02:55.447 [DEBUG] (job.c:76) Job #7 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:55.447 [DEBUG] (queue.c:139) queue_push: job #7 enqueued (queue size=3)
+2026-03-20 09:02:58.571 [DEBUG] (engine.c:233) Job #5: EOG at step 7
+2026-03-20 09:02:58.572 [DEBUG] (engine.c:269) Job #5: generated 7 tokens
+2026-03-20 09:02:58.572 [DEBUG] (job.c:147) Job #5 → DONE     (exec=3126.8 ms, output_len=31)
+2026-03-20 09:02:58.572 [DEBUG] (queue.c:191) queue_pop: job #4 dequeued (queue size=2)
+2026-03-20 09:02:58.573 [DEBUG] (job.c:134) Job #4 → RUNNING  (queue_wait=3127.1 ms)
+2026-03-20 09:02:58.572 [DEBUG] (job.c:76) Job #8 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:02:58.573 [DEBUG] (queue.c:139) queue_push: job #8 enqueued (queue size=3)
+2026-03-20 09:02:58.573 [DEBUG] (engine.c:190) Job #4: 43 prompt tokens, generating up to 64
+2026-03-20 09:03:02.132 [DEBUG] (engine.c:233) Job #4: EOG at step 14
+2026-03-20 09:03:02.133 [DEBUG] (engine.c:269) Job #4: generated 14 tokens
+2026-03-20 09:03:02.133 [DEBUG] (job.c:147) Job #4 → DONE     (exec=3560.1 ms, output_len=18)
+2026-03-20 09:03:02.133 [DEBUG] (queue.c:191) queue_pop: job #6 dequeued (queue size=2)
+2026-03-20 09:03:02.133 [DEBUG] (job.c:134) Job #6 → RUNNING  (queue_wait=6687.7 ms)
+2026-03-20 09:03:02.133 [DEBUG] (job.c:76) Job #9 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:02.133 [DEBUG] (queue.c:139) queue_push: job #9 enqueued (queue size=3)
+2026-03-20 09:03:02.134 [DEBUG] (engine.c:190) Job #6: 39 prompt tokens, generating up to 64
+2026-03-20 09:03:10.984 [DEBUG] (engine.c:269) Job #6: generated 64 tokens
+2026-03-20 09:03:10.984 [DEBUG] (job.c:147) Job #6 → DONE     (exec=8850.7 ms, output_len=348)
+2026-03-20 09:03:10.984 [DEBUG] (queue.c:191) queue_pop: job #7 dequeued (queue size=2)
+2026-03-20 09:03:10.984 [DEBUG] (job.c:134) Job #7 → RUNNING  (queue_wait=15537.5 ms)
+2026-03-20 09:03:10.984 [DEBUG] (job.c:76) Job #10 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:10.985 [DEBUG] (queue.c:139) queue_push: job #10 enqueued (queue size=3)
+2026-03-20 09:03:10.984 [DEBUG] (engine.c:190) Job #7: 41 prompt tokens, generating up to 64
+2026-03-20 09:03:19.024 [DEBUG] (engine.c:269) Job #7: generated 64 tokens
+2026-03-20 09:03:19.024 [DEBUG] (job.c:147) Job #7 → DONE     (exec=8040.1 ms, output_len=307)
+2026-03-20 09:03:19.025 [DEBUG] (queue.c:191) queue_pop: job #8 dequeued (queue size=2)
+2026-03-20 09:03:19.025 [DEBUG] (job.c:134) Job #8 → RUNNING  (queue_wait=20452.5 ms)
+2026-03-20 09:03:19.024 [DEBUG] (job.c:76) Job #11 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:19.025 [DEBUG] (queue.c:139) queue_push: job #11 enqueued (queue size=3)
+2026-03-20 09:03:19.025 [DEBUG] (engine.c:190) Job #8: 43 prompt tokens, generating up to 64
+2026-03-20 09:03:24.303 [DEBUG] (engine.c:233) Job #8: EOG at step 35
+2026-03-20 09:03:24.303 [DEBUG] (engine.c:269) Job #8: generated 35 tokens
+2026-03-20 09:03:24.303 [DEBUG] (job.c:147) Job #8 → DONE     (exec=5278.6 ms, output_len=179)
+2026-03-20 09:03:24.303 [DEBUG] (queue.c:191) queue_pop: job #9 dequeued (queue size=2)
+2026-03-20 09:03:24.303 [DEBUG] (job.c:134) Job #9 → RUNNING  (queue_wait=22170.4 ms)
+2026-03-20 09:03:24.304 [DEBUG] (engine.c:190) Job #9: 47 prompt tokens, generating up to 64
+2026-03-20 09:03:24.304 [DEBUG] (job.c:76) Job #12 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:24.304 [DEBUG] (queue.c:139) queue_push: job #12 enqueued (queue size=3)
+2026-03-20 09:03:32.513 [DEBUG] (engine.c:269) Job #9: generated 64 tokens
+2026-03-20 09:03:32.513 [DEBUG] (job.c:147) Job #9 → DONE     (exec=8209.3 ms, output_len=236)
+2026-03-20 09:03:32.513 [DEBUG] (queue.c:191) queue_pop: job #10 dequeued (queue size=2)
+2026-03-20 09:03:32.513 [DEBUG] (job.c:134) Job #10 → RUNNING  (queue_wait=21528.8 ms)
+2026-03-20 09:03:32.513 [DEBUG] (job.c:76) Job #13 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:32.513 [DEBUG] (queue.c:139) queue_push: job #13 enqueued (queue size=3)
+2026-03-20 09:03:32.513 [DEBUG] (engine.c:190) Job #10: 40 prompt tokens, generating up to 64
+2026-03-20 09:03:39.168 [DEBUG] (engine.c:269) Job #10: generated 64 tokens
+2026-03-20 09:03:39.168 [DEBUG] (job.c:147) Job #10 → DONE     (exec=6655.0 ms, output_len=286)
+2026-03-20 09:03:39.168 [DEBUG] (queue.c:191) queue_pop: job #11 dequeued (queue size=2)
+2026-03-20 09:03:39.168 [DEBUG] (job.c:134) Job #11 → RUNNING  (queue_wait=20143.6 ms)
+2026-03-20 09:03:39.168 [DEBUG] (job.c:76) Job #14 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:39.168 [DEBUG] (queue.c:139) queue_push: job #14 enqueued (queue size=3)
+2026-03-20 09:03:39.168 [DEBUG] (engine.c:190) Job #11: 46 prompt tokens, generating up to 64
+2026-03-20 09:03:43.669 [DEBUG] (engine.c:233) Job #11: EOG at step 27
+2026-03-20 09:03:43.670 [DEBUG] (engine.c:269) Job #11: generated 27 tokens
+2026-03-20 09:03:43.670 [DEBUG] (job.c:147) Job #11 → DONE     (exec=4501.7 ms, output_len=72)
+2026-03-20 09:03:43.670 [DEBUG] (queue.c:191) queue_pop: job #12 dequeued (queue size=2)
+2026-03-20 09:03:43.670 [DEBUG] (job.c:134) Job #12 → RUNNING  (queue_wait=19366.5 ms)
+2026-03-20 09:03:43.671 [DEBUG] (engine.c:190) Job #12: 42 prompt tokens, generating up to 64
+2026-03-20 09:03:43.671 [DEBUG] (job.c:76) Job #15 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:03:43.671 [DEBUG] (queue.c:139) queue_push: job #15 enqueued (queue size=3)
+2026-03-20 09:03:47.669 [DEBUG] (engine.c:233) Job #12: EOG at step 19
+2026-03-20 09:03:47.670 [DEBUG] (engine.c:269) Job #12: generated 19 tokens
+2026-03-20 09:03:47.670 [DEBUG] (job.c:147) Job #34166423552 → DONE     (exec=3999.6 ms, output_len=75)
+2026-03-20 09:03:47.670 [DEBUG] (queue.c:191) queue_pop: job #13 dequeued (queue size=2)
+2026-03-20 09:03:47.670 [DEBUG] (job.c:134) Job #13 → RUNNING  (queue_wait=15157.2 ms)
+2026-03-20 09:03:47.670 [DEBUG] (engine.c:190) Job #13: 39 prompt tokens, generating up to 64
+2026-03-20 09:03:52.345 [DEBUG] (engine.c:233) Job #13: EOG at step 27
+2026-03-20 09:03:52.345 [DEBUG] (engine.c:269) Job #13: generated 27 tokens
+2026-03-20 09:03:52.345 [DEBUG] (job.c:147) Job #13 → DONE     (exec=4674.8 ms, output_len=132)
+2026-03-20 09:03:52.345 [DEBUG] (queue.c:191) queue_pop: job #14 dequeued (queue size=1)
+2026-03-20 09:03:52.345 [DEBUG] (job.c:134) Job #14 → RUNNING  (queue_wait=13177.0 ms)
+2026-03-20 09:03:52.345 [DEBUG] (engine.c:190) Job #14: 41 prompt tokens, generating up to 64
+2026-03-20 09:03:59.442 [DEBUG] (engine.c:269) Job #14: generated 64 tokens
+2026-03-20 09:03:59.442 [DEBUG] (job.c:147) Job #14 → DONE     (exec=7097.1 ms, output_len=330)
+2026-03-20 09:03:59.442 [DEBUG] (queue.c:191) queue_pop: job #15 dequeued (queue size=0)
+2026-03-20 09:03:59.443 [DEBUG] (job.c:134) Job #15 → RUNNING  (queue_wait=15771.5 ms)
+2026-03-20 09:03:59.443 [DEBUG] (engine.c:190) Job #15: 42 prompt tokens, generating up to 64
+2026-03-20 09:04:05.714 [DEBUG] (engine.c:233) Job #15: EOG at step 55
+2026-03-20 09:04:05.715 [DEBUG] (engine.c:269) Job #15: generated 55 tokens
+2026-03-20 09:04:05.716 [DEBUG] (job.c:147) Job #139945536652240 → DONE     (exec=6272.4 ms, output_len=230)
+2026-03-20 09:04:29.667 [DEBUG] (job.c:76) Job #16 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:04:29.668 [DEBUG] (queue.c:139) queue_push: job #16 enqueued (queue size=1)
+2026-03-20 09:04:29.668 [DEBUG] (queue.c:191) queue_pop: job #16 dequeued (queue size=0)
+2026-03-20 09:04:29.668 [DEBUG] (job.c:134) Job #16 → RUNNING  (queue_wait=0.5 ms)
+2026-03-20 09:04:29.668 [DEBUG] (engine.c:190) Job #16: 42 prompt tokens, generating up to 64
+2026-03-20 09:04:36.203 [DEBUG] (engine.c:269) Job #16: generated 64 tokens
+2026-03-20 09:04:36.203 [DEBUG] (job.c:147) Job #16 → DONE     (exec=6535.1 ms, output_len=416)
+2026-03-20 09:05:16.848 [DEBUG] (job.c:76) Job #17 created | max_tokens=64 temp=0.00 prompt="<|system|>
+You are a helpful assistant.<..."
+2026-03-20 09:05:16.848 [DEBUG] (queue.c:139) queue_push: job #17 enqueued (queue size=1)
+2026-03-20 09:05:16.848 [DEBUG] (queue.c:191) queue_pop: job #17 dequeued (queue size=0)
+2026-03-20 09:05:16.848 [DEBUG] (job.c:134) Job #17 → RUNNING  (queue_wait=0.4 ms)
+2026-03-20 09:05:16.849 [DEBUG] (engine.c:190) Job #17: 43 prompt tokens, generating up to 64
+2026-03-20 09:05:22.927 [DEBUG] (engine.c:269) Job #17: generated 64 tokens
+2026-03-20 09:05:22.927 [DEBUG] (job.c:147) Job #17 → DONE     (exec=6078.5 ms, output_len=236)
+2026-03-20 09:05:34.776 [INFO ] (engine.c:424) Engine stopping...
+2026-03-20 09:05:34.776 [INFO ] (queue.c:212) Queue shut down (0 jobs remaining)
+2026-03-20 09:05:34.777 [INFO ] (engine.c:287) Worker: queue drained, exiting
+2026-03-20 09:05:34.777 [INFO ] (engine.c:317) Worker thread exited
+2026-03-20 09:05:34.777 [INFO ] (engine.c:428) Engine stopped
+2026-03-20 09:05:34.800 [INFO ] (engine.c:443) Engine destroyed
