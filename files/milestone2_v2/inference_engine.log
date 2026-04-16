@@ -1,0 +1,148 @@
+2026-04-16 12:59:35.229 [INFO ] (engine.c:305) Using preloaded model (shared across workers)
+2026-04-16 12:59:35.246 [INFO ] (engine.c:343) Worker 0 context ready (will pin to core 0)
+2026-04-16 12:59:35.246 [INFO ] (queue.c:36) Queue created (max_size=512)
+2026-04-16 12:59:35.246 [INFO ] (engine.c:353) Engine ready (1 workers, affinity=ON)
+2026-04-16 12:59:35.246 [INFO ] (engine.c:384) Engine started (1 workers)
+2026-04-16 12:59:35.246 [DEBUG] (queue.c:139) queue_push: job #1 enqueued (queue size=1)
+2026-04-16 12:59:35.246 [INFO ] (engine.c:238) [W0] pinned to CPU core 0
+2026-04-16 12:59:35.246 [INFO ] (engine.c:246) [W0/core0] Worker thread started
+2026-04-16 12:59:35.246 [DEBUG] (queue.c:139) queue_push: job #2 enqueued (queue size=2)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #3 enqueued (queue size=3)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #4 enqueued (queue size=4)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #5 enqueued (queue size=5)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #6 enqueued (queue size=6)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #7 enqueued (queue size=7)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #8 enqueued (queue size=8)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #9 enqueued (queue size=9)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #10 enqueued (queue size=10)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #11 enqueued (queue size=11)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #12 enqueued (queue size=12)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #13 enqueued (queue size=13)
+2026-04-16 12:59:35.247 [DEBUG] (queue.c:139) queue_push: job #14 enqueued (queue size=14)
+2026-04-16 12:59:35.248 [DEBUG] (queue.c:139) queue_push: job #15 enqueued (queue size=15)
+2026-04-16 12:59:35.248 [DEBUG] (queue.c:139) queue_push: job #16 enqueued (queue size=16)
+2026-04-16 12:59:35.248 [INFO ] (main.c:131) Submitted 16 jobs to queue (all async)
+2026-04-16 12:59:35.250 [DEBUG] (queue.c:191) queue_pop: job #1 dequeued (queue size=15)
+2026-04-16 12:59:35.250 [DEBUG] (engine.c:171) [W0/core0] Job #1: 40 prompt tokens, up to 128 new
+2026-04-16 12:59:39.098 [DEBUG] (queue.c:191) queue_pop: job #2 dequeued (queue size=14)
+2026-04-16 12:59:39.098 [DEBUG] (engine.c:171) [W0/core0] Job #2: 43 prompt tokens, up to 128 new
+2026-04-16 12:59:45.730 [DEBUG] (queue.c:191) queue_pop: job #3 dequeued (queue size=13)
+2026-04-16 12:59:45.730 [DEBUG] (engine.c:171) [W0/core0] Job #3: 42 prompt tokens, up to 128 new
+2026-04-16 12:59:50.596 [DEBUG] (queue.c:191) queue_pop: job #4 dequeued (queue size=12)
+2026-04-16 12:59:50.596 [DEBUG] (engine.c:171) [W0/core0] Job #4: 43 prompt tokens, up to 128 new
+2026-04-16 12:59:55.093 [DEBUG] (queue.c:191) queue_pop: job #5 dequeued (queue size=11)
+2026-04-16 12:59:55.093 [DEBUG] (engine.c:171) [W0/core0] Job #5: 47 prompt tokens, up to 128 new
+2026-04-16 13:00:05.909 [DEBUG] (queue.c:191) queue_pop: job #6 dequeued (queue size=10)
+2026-04-16 13:00:05.910 [DEBUG] (engine.c:171) [W0/core0] Job #6: 39 prompt tokens, up to 128 new
+2026-04-16 13:00:11.346 [DEBUG] (queue.c:191) queue_pop: job #7 dequeued (queue size=9)
+2026-04-16 13:00:11.346 [DEBUG] (engine.c:171) [W0/core0] Job #7: 41 prompt tokens, up to 128 new
+2026-04-16 13:00:26.544 [DEBUG] (queue.c:191) queue_pop: job #8 dequeued (queue size=8)
+2026-04-16 13:00:26.544 [DEBUG] (engine.c:171) [W0/core0] Job #8: 46 prompt tokens, up to 128 new
+2026-04-16 13:00:32.676 [DEBUG] (queue.c:191) queue_pop: job #9 dequeued (queue size=7)
+2026-04-16 13:00:32.676 [DEBUG] (engine.c:171) [W0/core0] Job #9: 42 prompt tokens, up to 128 new
+2026-04-16 13:00:41.432 [DEBUG] (queue.c:191) queue_pop: job #10 dequeued (queue size=6)
+2026-04-16 13:00:41.432 [DEBUG] (engine.c:171) [W0/core0] Job #10: 39 prompt tokens, up to 128 new
+2026-04-16 13:00:52.229 [DEBUG] (queue.c:191) queue_pop: job #11 dequeued (queue size=5)
+2026-04-16 13:00:52.230 [DEBUG] (engine.c:171) [W0/core0] Job #11: 40 prompt tokens, up to 128 new
+2026-04-16 13:01:02.105 [DEBUG] (queue.c:191) queue_pop: job #12 dequeued (queue size=4)
+2026-04-16 13:01:02.105 [DEBUG] (engine.c:171) [W0/core0] Job #12: 41 prompt tokens, up to 128 new
+2026-04-16 13:01:13.373 [DEBUG] (queue.c:191) queue_pop: job #13 dequeued (queue size=3)
+2026-04-16 13:01:13.373 [DEBUG] (engine.c:171) [W0/core0] Job #13: 42 prompt tokens, up to 128 new
+2026-04-16 13:01:25.241 [DEBUG] (queue.c:191) queue_pop: job #14 dequeued (queue size=2)
+2026-04-16 13:01:25.241 [DEBUG] (engine.c:171) [W0/core0] Job #14: 39 prompt tokens, up to 128 new
+2026-04-16 13:01:34.476 [DEBUG] (queue.c:191) queue_pop: job #15 dequeued (queue size=1)
+2026-04-16 13:01:34.477 [DEBUG] (engine.c:171) [W0/core0] Job #15: 44 prompt tokens, up to 128 new
+2026-04-16 13:01:51.065 [DEBUG] (queue.c:191) queue_pop: job #16 dequeued (queue size=0)
+2026-04-16 13:01:51.065 [DEBUG] (engine.c:171) [W0/core0] Job #16: 40 prompt tokens, up to 128 new
+2026-04-16 13:02:05.618 [INFO ] (queue.c:212) Queue shut down (0 jobs remaining)
+2026-04-16 13:02:05.618 [INFO ] (engine.c:251) [W0] exiting
+2026-04-16 13:02:05.618 [INFO ] (engine.c:402) Engine stopped
+2026-04-16 13:02:05.619 [INFO ] (engine.c:305) Using preloaded model (shared across workers)
+2026-04-16 13:02:05.634 [INFO ] (engine.c:343) Worker 0 context ready (will pin to core 0)
+2026-04-16 13:02:05.676 [INFO ] (engine.c:343) Worker 1 context ready (will pin to core 1)
+2026-04-16 13:02:05.676 [INFO ] (queue.c:36) Queue created (max_size=512)
+2026-04-16 13:02:05.676 [INFO ] (engine.c:353) Engine ready (2 workers, affinity=ON)
+2026-04-16 13:02:05.676 [INFO ] (engine.c:384) Engine started (2 workers)
+2026-04-16 13:02:05.676 [DEBUG] (queue.c:139) queue_push: job #1 enqueued (queue size=1)
+2026-04-16 13:02:05.676 [INFO ] (engine.c:238) [W1] pinned to CPU core 1
+2026-04-16 13:02:05.676 [DEBUG] (queue.c:139) queue_push: job #2 enqueued (queue size=2)
+2026-04-16 13:02:05.676 [INFO ] (engine.c:246) [W1/core1] Worker thread started
+2026-04-16 13:02:05.676 [DEBUG] (queue.c:139) queue_push: job #3 enqueued (queue size=3)
+2026-04-16 13:02:05.676 [DEBUG] (queue.c:191) queue_pop: job #1 dequeued (queue size=2)
+2026-04-16 13:02:05.676 [DEBUG] (queue.c:139) queue_push: job #4 enqueued (queue size=3)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #5 enqueued (queue size=4)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #6 enqueued (queue size=5)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #7 enqueued (queue size=6)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #8 enqueued (queue size=7)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #9 enqueued (queue size=8)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #10 enqueued (queue size=9)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #11 enqueued (queue size=10)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #12 enqueued (queue size=11)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #13 enqueued (queue size=12)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #14 enqueued (queue size=13)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #15 enqueued (queue size=14)
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:139) queue_push: job #16 enqueued (queue size=15)
+2026-04-16 13:02:05.677 [INFO ] (main.c:131) Submitted 16 jobs to queue (all async)
+2026-04-16 13:02:05.677 [INFO ] (engine.c:238) [W0] pinned to CPU core 0
+2026-04-16 13:02:05.677 [INFO ] (engine.c:246) [W0/core0] Worker thread started
+2026-04-16 13:02:05.677 [DEBUG] (engine.c:171) [W1/core1] Job #1: 40 prompt tokens, up to 128 new
+2026-04-16 13:02:05.677 [DEBUG] (queue.c:191) queue_pop: job #2 dequeued (queue size=14)
+2026-04-16 13:02:05.678 [DEBUG] (engine.c:171) [W0/core0] Job #2: 43 prompt tokens, up to 128 new
+2026-04-16 13:02:10.625 [DEBUG] (queue.c:191) queue_pop: job #3 dequeued (queue size=13)
+2026-04-16 13:02:10.625 [DEBUG] (engine.c:171) [W1/core1] Job #3: 42 prompt tokens, up to 128 new
+2026-04-16 13:02:14.409 [DEBUG] (queue.c:191) queue_pop: job #4 dequeued (queue size=12)
+2026-04-16 13:02:14.410 [DEBUG] (engine.c:171) [W0/core0] Job #4: 43 prompt tokens, up to 128 new
+2026-04-16 13:02:16.995 [DEBUG] (queue.c:191) queue_pop: job #5 dequeued (queue size=11)
+2026-04-16 13:02:16.996 [DEBUG] (engine.c:171) [W1/core1] Job #5: 47 prompt tokens, up to 128 new
+2026-04-16 13:02:20.001 [DEBUG] (queue.c:191) queue_pop: job #6 dequeued (queue size=10)
+2026-04-16 13:02:20.002 [DEBUG] (engine.c:171) [W0/core0] Job #6: 39 prompt tokens, up to 128 new
+2026-04-16 13:02:27.137 [DEBUG] (queue.c:191) queue_pop: job #7 dequeued (queue size=9)
+2026-04-16 13:02:27.137 [DEBUG] (engine.c:171) [W0/core0] Job #7: 41 prompt tokens, up to 128 new
+2026-04-16 13:02:30.443 [DEBUG] (queue.c:191) queue_pop: job #8 dequeued (queue size=8)
+2026-04-16 13:02:30.443 [DEBUG] (engine.c:171) [W1/core1] Job #8: 46 prompt tokens, up to 128 new
+2026-04-16 13:02:38.929 [DEBUG] (queue.c:191) queue_pop: job #9 dequeued (queue size=7)
+2026-04-16 13:02:38.930 [DEBUG] (engine.c:171) [W1/core1] Job #9: 42 prompt tokens, up to 128 new
+2026-04-16 13:02:48.068 [DEBUG] (queue.c:191) queue_pop: job #10 dequeued (queue size=6)
+2026-04-16 13:02:48.068 [DEBUG] (engine.c:171) [W0/core0] Job #10: 39 prompt tokens, up to 128 new
+2026-04-16 13:02:51.100 [DEBUG] (queue.c:191) queue_pop: job #11 dequeued (queue size=5)
+2026-04-16 13:02:51.101 [DEBUG] (engine.c:171) [W1/core1] Job #11: 40 prompt tokens, up to 128 new
+2026-04-16 13:03:01.882 [DEBUG] (queue.c:191) queue_pop: job #12 dequeued (queue size=4)
+2026-04-16 13:03:01.883 [DEBUG] (engine.c:171) [W0/core0] Job #12: 41 prompt tokens, up to 128 new
+2026-04-16 13:03:03.115 [DEBUG] (queue.c:191) queue_pop: job #13 dequeued (queue size=3)
+2026-04-16 13:03:03.115 [DEBUG] (engine.c:171) [W1/core1] Job #13: 42 prompt tokens, up to 128 new
+2026-04-16 13:03:15.430 [DEBUG] (queue.c:191) queue_pop: job #14 dequeued (queue size=2)
+2026-04-16 13:03:15.431 [DEBUG] (engine.c:171) [W0/core0] Job #14: 39 prompt tokens, up to 128 new
+2026-04-16 13:03:17.036 [DEBUG] (queue.c:191) queue_pop: job #15 dequeued (queue size=1)
+2026-04-16 13:03:17.036 [DEBUG] (engine.c:171) [W1/core1] Job #15: 44 prompt tokens, up to 128 new
+2026-04-16 13:03:26.384 [DEBUG] (queue.c:191) queue_pop: job #16 dequeued (queue size=0)
+2026-04-16 13:03:26.384 [DEBUG] (engine.c:171) [W0/core0] Job #16: 40 prompt tokens, up to 128 new
+2026-04-16 13:03:43.373 [INFO ] (queue.c:212) Queue shut down (0 jobs remaining)
+2026-04-16 13:03:43.373 [INFO ] (engine.c:251) [W0] exiting
+2026-04-16 13:03:43.373 [INFO ] (engine.c:251) [W1] exiting
+2026-04-16 13:03:43.374 [INFO ] (engine.c:402) Engine stopped
+2026-04-16 13:03:43.375 [INFO ] (engine.c:305) Using preloaded model (shared across workers)
+2026-04-16 13:03:43.389 [INFO ] (engine.c:343) Worker 0 context ready (will pin to core 0)
+2026-04-16 13:03:43.409 [INFO ] (engine.c:343) Worker 1 context ready (will pin to core 1)
+2026-04-16 13:03:43.409 [INFO ] (queue.c:36) Queue created (max_size=512)
+2026-04-16 13:03:43.409 [INFO ] (engine.c:353) Engine ready (2 workers, affinity=ON)
+2026-04-16 13:03:43.409 [INFO ] (engine.c:384) Engine started (2 workers)
+2026-04-16 13:03:43.409 [INFO ] (engine.c:238) [W0] pinned to CPU core 0
+2026-04-16 13:03:43.410 [INFO ] (engine.c:246) [W0/core0] Worker thread started
+2026-04-16 13:03:43.409 [INFO ] (engine.c:238) [W1] pinned to CPU core 1
+2026-04-16 13:03:43.410 [INFO ] (engine.c:246) [W1/core1] Worker thread started
+2026-04-16 13:03:52.469 [DEBUG] (queue.c:139) queue_push: job #1 enqueued (queue size=1)
+2026-04-16 13:03:52.469 [DEBUG] (queue.c:191) queue_pop: job #1 dequeued (queue size=0)
+2026-04-16 13:03:52.469 [DEBUG] (engine.c:171) [W0/core0] Job #1: 38 prompt tokens, up to 128 new
+2026-04-16 13:04:01.836 [DEBUG] (queue.c:139) queue_push: job #2 enqueued (queue size=1)
+2026-04-16 13:04:01.837 [DEBUG] (queue.c:191) queue_pop: job #2 dequeued (queue size=0)
+2026-04-16 13:04:01.837 [DEBUG] (engine.c:171) [W1/core1] Job #2: 41 prompt tokens, up to 128 new
+2026-04-16 13:04:22.569 [DEBUG] (queue.c:139) queue_push: job #3 enqueued (queue size=1)
+2026-04-16 13:04:22.569 [DEBUG] (queue.c:191) queue_pop: job #3 dequeued (queue size=0)
+2026-04-16 13:04:22.569 [DEBUG] (engine.c:171) [W0/core0] Job #3: 47 prompt tokens, up to 128 new
+2026-04-16 13:04:34.419 [DEBUG] (queue.c:139) queue_push: job #4 enqueued (queue size=1)
+2026-04-16 13:04:34.419 [DEBUG] (queue.c:191) queue_pop: job #4 dequeued (queue size=0)
+2026-04-16 13:04:34.419 [DEBUG] (engine.c:171) [W1/core1] Job #4: 38 prompt tokens, up to 128 new
+2026-04-16 13:04:46.542 [INFO ] (queue.c:212) Queue shut down (0 jobs remaining)
+2026-04-16 13:04:46.542 [INFO ] (engine.c:251) [W0] exiting
+2026-04-16 13:04:46.543 [INFO ] (engine.c:251) [W1] exiting
+2026-04-16 13:04:46.543 [INFO ] (engine.c:402) Engine stopped
