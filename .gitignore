@@ -1,2 +1,6 @@
 files/milestone2/llama.cpp/
 files/milestone2_v2/llama.cpp/
+files/milestone3/*.gguf
+files/milestone3/inference_engine
+files/milestone3/*.log
+files/milestone3/build/
